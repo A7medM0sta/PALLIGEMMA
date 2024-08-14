@@ -1,16 +1,18 @@
 from PIL import Image
 import torch
 import fire
-
+from transformers import AutoProcessor, AutoModelForPreTraining  # Hugging Face imports
 from processing_paligemma import PaliGemmaProcessor
 from modeling_gemma import KVCache, PaliGemmaForConditionalGeneration
 from utils import load_hf_model
 
+# # Load model directly
+# processor = AutoProcessor.from_pretrained("google/paligemma-3b-pt-224")
+# model = AutoModelForPreTraining.from_pretrained("google/paligemma-3b-pt-224")
 
 def move_inputs_to_device(model_inputs: dict, device: str):
     model_inputs = {k: v.to(device) for k, v in model_inputs.items()}
     return model_inputs
-
 
 def get_model_inputs(
     processor: PaliGemmaProcessor, prompt: str, image_file_path: str, device: str
@@ -21,7 +23,6 @@ def get_model_inputs(
     model_inputs = processor(text=prompts, images=images)
     model_inputs = move_inputs_to_device(model_inputs, device)
     return model_inputs
-
 
 def test_inference(
     model: PaliGemmaForConditionalGeneration,
@@ -48,7 +49,6 @@ def test_inference(
     for _ in range(max_tokens_to_generate):
         # Get the model outputs
 
-        # TODO: remove the labels
         outputs = model(
             input_ids=input_ids,
             pixel_values=pixel_values,
@@ -85,7 +85,6 @@ def test_inference(
 
     print(prompt + decoded)
 
-
 def _sample_top_p(probs: torch.Tensor, p: float):
     # (B, vocab_size)
     probs_sort, probs_idx = torch.sort(probs, dim=-1, descending=True)
@@ -109,7 +108,6 @@ def _sample_top_p(probs: torch.Tensor, p: float):
     # Get the token position in the vocabulary corresponding to the sampled index
     next_token = torch.gather(probs_idx, -1, next_token)
     return next_token
-
 
 def main(
     model_path: str = None,
@@ -152,7 +150,6 @@ def main(
             top_p,
             do_sample,
         )
-
 
 if __name__ == "__main__":
     fire.Fire(main)
