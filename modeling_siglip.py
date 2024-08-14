@@ -4,6 +4,7 @@ import torch.nn as nn
 
 
 class SiglipVisionConfig:
+    
     """
     Configuration class for the Siglip Vision model.
     Args:
