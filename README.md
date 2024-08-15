@@ -16,7 +16,7 @@ PaliGemma is an open Vision-Language Model (VLM) that is based on the SigLIP-So4
 
 1. Clone the repository:
     ```sh
-    git clone <repository-url>
+    git clone https://github.com/A7medM0sta/PALLIGEMA.git
     cd PALLIGEMA
     ```
 
@@ -70,6 +70,9 @@ python inference.py \
     --do_sample $DO_SAMPLE \
     --only_cpu $ONLY_CPU
 ```
+## Results
+
+
 
 ## Code Structure
 
