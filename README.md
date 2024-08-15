@@ -73,8 +73,11 @@ python inference.py \
 ## Results
 - Examples of the model's output on different tasks are shown below:
 
-Input Image: ![Pyramid of Khafre, Giza, Egypt](Assets/Pyramid-of-Khafre-Giza-Egypt.jpg)
-a. Image Captioning
+Input Image: 
+<img src="Assets/Pyramid-of-Khafre-Giza-Egypt.jpg" alt="Pyramid of Khafre, Giza, Egypt" width="300"/>
+
+Palligemma Features:
+a.Image Captioning
 ```
 Prompt:caption for this image ?
 Answer:In this image we can see a pyramid. In the background there is sky.
