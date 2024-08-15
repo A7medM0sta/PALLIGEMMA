@@ -31,11 +31,11 @@ Answer:In this image we can see a pyramid. In the background there is sky.
 
 b.Question Answering
 ```
-Prompt:where is this building ?
+Prompt:where is this pyramid ?
 Answer:Egypt
 ```
 
-c. Text Generation ( Text Completion)
+c. Text Generation ( Text Completion )
 ```
 Prompt:the building is 
 Answer: a pyramid.
