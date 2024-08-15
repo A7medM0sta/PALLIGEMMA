@@ -71,8 +71,12 @@ python inference.py \
     --only_cpu $ONLY_CPU
 ```
 ## Results
+Examples of the model's output on different tasks are shown below:
+Input Image: ![Pyramid of Khafre, Giza, Egypt](Assets/Pyramid-of-Khafre-Giza-Egypt.jpg)
+a. Image Captioning
+```
 
-
+```
 
 ## Code Structure
 
