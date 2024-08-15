@@ -232,3 +232,11 @@ Directory and File Descriptions:
 •Gemma_Modeling/: Includes Python scripts for model development, a README, and a requirements file.
 •Setup/: Contains setup scripts and utility files for initializing the project.
 ```
+
+## References
+Special for the references and Umar Gmail:
+- https://arxiv.org/abs/2407.07726
+- https://huggingface.co/docs/transformers/main/en/model_doc/paligemma
+- https://github.com/google-research/big_vision/blob/main/big_vision/configs/proj/paligemma/README.md
+- https://blog.roboflow.com/how-to-fine-tune-paligemma/
+- https://blog.paperspace.com/paligemma-a-lightweight-open-vision-language-model-vlm/
