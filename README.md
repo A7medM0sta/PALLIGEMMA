@@ -23,6 +23,7 @@ Input Image:
 <img src="Assets/Pyramid-of-Khafre-Giza-Egypt.jpg" alt="Pyramid of Khafre, Giza, Egypt" width="300"/>
 
 Palligemma Features:
+
 a.Image Captioning
 ```
 Prompt:caption for this image ?
