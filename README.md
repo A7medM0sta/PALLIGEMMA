@@ -18,6 +18,8 @@ PaliGemma is an open Vision-Language Model (VLM) that is based on the SigLIP-So4
 - Examples of the model's output on different tasks are shown below:
 
 Input Image: 
+
+
 <img src="Assets/Pyramid-of-Khafre-Giza-Egypt.jpg" alt="Pyramid of Khafre, Giza, Egypt" width="300"/>
 
 Palligemma Features:
