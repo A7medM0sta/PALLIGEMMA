@@ -71,12 +71,32 @@ python inference.py \
     --only_cpu $ONLY_CPU
 ```
 ## Results
-Examples of the model's output on different tasks are shown below:
+- Examples of the model's output on different tasks are shown below:
+
 Input Image: ![Pyramid of Khafre, Giza, Egypt](Assets/Pyramid-of-Khafre-Giza-Egypt.jpg)
 a. Image Captioning
 ```
-
+Prompt:caption for this image ?
+Answer:In this image we can see a pyramid. In the background there is sky.
 ```
+
+b.Question Answering
+```
+Prompt:where is this building ?
+Answer:Egypt
+```
+
+c. Text Generation ( Text Completion)
+```
+Prompt:the building is 
+Answer: a pyramid.
+```
+d.object detection
+```
+Prompt: detect the object in the image
+Answer:
+```
+![Detected Pyramid](Assets/pyramids.png)
 
 ## Code Structure
 
