@@ -232,30 +232,3 @@ Directory and File Descriptions:
 •Gemma_Modeling/: Includes Python scripts for model development, a README, and a requirements file.
 •Setup/: Contains setup scripts and utility files for initializing the project.
 ```
-## Classes and Functions
-
-### `PaliGemmaProcessor`
-
-A processor class for handling text and image inputs for the PaliGemma model.
-
-#### Methods
-
-- `__init__(self, tokenizer, num_image_tokens: int, image_size: int)`: Initializes the processor.
-- `__call__(self, text: List[str], images: List[Image.Image], padding: str = "longest", truncation: bool = True) -> dict`: Processes the text and image inputs and returns a dictionary containing the processed inputs.
-
-### `process_images`
-
-Processes a list of images by resizing, rescaling, normalizing, and reordering the channel dimension.
-
-### `resize`
-
-Resizes the input image to the specified size.
-
-### `normalize`
-
-Normalizes the pixel values of an image by subtracting the mean and dividing by the standard deviation.
-
-## License
-
-This project is licensed under the MIT License.
-```
