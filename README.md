@@ -99,7 +99,9 @@ d.object detection
 Prompt: detect the object in the image
 Answer:
 ```
-![Detected Pyramid](Assets/pyramids.png)
+<img src="Assets/pyramids.png" alt="Detected Pyramid" width="300"/>
+
+[//]: # (![]&#40;Assets/pyramids.png&#41;)
 
 ## Code Structure
 
